@@ -39,35 +39,10 @@
         float: right;
         margin-top: 5px
       }
-      #left{
-        width:200px;
-        height:700px;
-        float:left;
-      }
-      #middle{
-        width:600px;
-        float:left;
-      }
-      #right{
-        width:200px;
-        float:right;
-      }
 
     </style>
 	</head>
 <body>
-<div id="left">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- a2zyoutube -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-7675924055683611"
-     data-ad-slot="4777916485"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
-<div id="middle">
 	<form class="form-download" method="get" id="download" action="getvideo.php">
 		<h1 class="form-download-heading">Youtube Downloader</h1>
 		<input type="text" name="videoid" id="videoid" size="40" placeholder="VideoID" />
@@ -86,21 +61,9 @@
 	}
 	return false;	// if isn't chrome return false
     }
-   // if(($config['feature']['browserExtensions']==true)&&(is_chrome()))
-    //  echo '<a href="ytdl.user.js" class="userscript btn btn-mini" title="Install chrome extension to view a \'Download\' link to this application on Youtube video pages."> Install Chrome Extension </a>';
+    if(($config['feature']['browserExtensions']==true)&&(is_chrome()))
+      echo '<a href="ytdl.user.js" class="userscript btn btn-mini" title="Install chrome extension to view a \'Download\' link to this application on Youtube video pages."> Install Chrome Extension </a>';
     ?>
   </form>
-  </div>
-  <div id="right">
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- a2zyoutube -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-7675924055683611"
-     data-ad-slot="4777916485"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
 </body>
 </html>
